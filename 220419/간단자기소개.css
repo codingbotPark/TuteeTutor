@@ -1,0 +1,123 @@
+body{
+    width:100%;
+    height:100vh;
+    background-color: #0d1117;
+    margin:0px;
+    display :flex;
+    flex-direction: column;
+
+    /* 케스케이딩 */
+    color:white
+}
+
+header{
+    font-size:xx-large;
+    font-weight:bold;
+    padding-top: 100px;
+    padding-left: 90px;
+}
+
+main{
+    /* width:23vw;
+    height:500px;
+    background: #21262d;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px 0px #0000001a;
+    transition: transform 0.5s; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:200px;
+    justify-content: center;
+
+}
+
+
+main > section{
+    width:450px;
+    height:450px;
+    background-color: white;
+    border-radius: 15px;
+    background: #21262d;
+    box-shadow: 4px 4px 15px 0px #0000001a;
+    transition: 0.5s;
+    border: #575757 solid 1px;
+    color:#c9d1d9;
+    margin: 20px;
+    
+}
+main >section:hover{
+    transform: scale(1.1);
+}
+
+section > a {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+a:link { color: #c9d1d9; text-decoration: none;}
+a:visited { color: #c9d1d9; text-decoration: none;}
+a:hover { color: #c9d1d9; text-decoration: none;}
+
+h3{
+    font-size: 25px;
+    /* margin:40px; */
+}
+
+img{
+    width:100%;
+    /* height:max-content; */
+    height: 350px;
+    object-fit: cover;
+    border-radius: 0px 0px 15px 15px;
+}
+
+aside{
+    position: fixed;
+    right: -100px;
+    top:-50px;
+    transition: transform 0.5s;
+}
+aside:hover{
+    transform: translate(-100px);
+}
+
+footer{
+    margin-top: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>h1{
+    font-size: 100px;
+}
+
+div{
+    border: dashed 10px;
+    margin-bottom: 300px;
+    font-size: 120px;
+}
+
+h2{
+    margin: 0px;
+    color: #0d1117;
+}
+h2:hover{
+    color:#c9d1d9;
+    transition: all 1s;
+    cursor:none;
+}
+
+/* footer > section{
+    width:800px;
+    height:500px ;
+    background-color: #21262d;
+    margin-bottom: 200px;
+    border-radius: 15px;
+    border: #575757 solid 1px;
+
+} */
+
