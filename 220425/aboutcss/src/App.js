@@ -1,25 +1,25 @@
 import react from "react";
-import {useNavigate,BrowserRouter, Route, Routes} from "react-router-dom"
+import {BrowserRouter, Route, Routes} from "react-router-dom"
 
 
 import Main from "./components/main/Main"
 import Position from "./components/position/Position";
 import Selector from "./components/selector/Selector";
 import Display from "./components/display/Display";
+import Cascading from "./components/cascading/Cascading";
 
 import NavBar from "./components/navBar/NavBar";
 
 import logo from "./logo.svg"
 
 function App() {
-  const navigate = useNavigate();
-  
+
   return (
     <div style={{
       backgroundColor:"#282c34", 
       color:"white",
-      height:"100vh",
-      width:"100vw",
+      minHeight:"100vh",
+      width:"100%",
       display:"flex",
       justifyContent:"center",
       alignItems:"center",
@@ -31,7 +31,9 @@ function App() {
           <Route path="/position" element={<Position/>}/>
           <Route path="/selector" element={<Selector/>}/>
           <Route path="/display" element={<Display/>}/>
+          <Route path="/cascading" element={<Cascading/>}/>
           <Route path="*" element={<h1>페이지 못찾음 ㅅㄱ</h1>}/>
+
         </Routes>
       <img src={logo} style={{
         position:"fixed",

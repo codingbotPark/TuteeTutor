@@ -1,4 +1,6 @@
 import React,{useState} from 'react';
+import { Link } from 'react-router-dom';
+
 
 import "./Main.css"
 
@@ -8,7 +10,8 @@ const Main = () => {
         {
             id:0,
             letter:"C",
-            content:"ascading"
+            content:"ascading",
+            link:"/cascading"
         },{
             id:1,
             letter:"S",
@@ -40,7 +43,13 @@ const Main = () => {
                         onMouseEnter={() => Enter(content.id)}
                         >{content.letter}</h2>
                         <div className='border'>
-                            <h2 className={isHover == content.id ? "word" : "wordEmpty"}>{content.content}</h2>
+                            <h2 className={isHover == content.id ? "word" : "wordEmpty"}>
+                                {
+                                    content.link ?
+                                    <Link to={content.link}>{content.content}</Link> : 
+                                    <div>{content.content}</div>
+                                }
+                                </h2>
                         </div>
                     </div>
                 ))}

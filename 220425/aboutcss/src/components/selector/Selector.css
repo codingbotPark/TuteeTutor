@@ -1,0 +1,49 @@
+::-webkit-scrollbar{
+    display: none;
+}
+.selectorContainer{
+    width:1000px;
+    margin-top: 300px;
+}
+.selectorBasic{
+    margin-bottom: 100vh;
+}
+.selectorBasic div{
+    margin-top: 30px;
+    cursor: default;
+}
+
+a{
+    text-decoration: underline;
+    color: white;
+}
+
+.selectorUnder{
+    cursor:pointer;
+}
+
+.selectorMore{
+    margin-bottom:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.selectorMore > *{
+    margin-bottom: 50px;
+    transition: all 0.7s;
+}
+
+.selectorLast{
+    margin-top: 200px;
+}
+
+.selectorHover:hover{
+    transform: scale(1.5);
+}
+.selectorActive:active{
+    transform: scale(1.5);
+}
+.selectorFocus:focus{
+    transform: scale(1.5);
+}

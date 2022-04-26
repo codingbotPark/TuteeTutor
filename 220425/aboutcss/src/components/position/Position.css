@@ -1,0 +1,33 @@
+.positionContainer ul{
+    list-style: none;
+    cursor:default;
+
+}
+.absolute{
+    position: relative;
+    background-color: #20232a;
+    border-radius: 15px;
+    padding: 100px;
+}
+
+.positionContainer > ul > li:nth-child(2):hover{
+    position: relative;
+    left:100px;
+}
+.positionContainer > ul > li:nth-child(3):hover{
+    position: absolute;
+    /* left: 100px; */
+    bottom: 0px;
+    left: 0px;
+}
+
+
+.pointNav{
+    position: absolute;
+    top:100px
+}
+.pointImg{
+    position: absolute;
+    bottom: 300px;
+    right:300px;
+}

@@ -1,0 +1,30 @@
+.container{
+    width:100%;
+    height: 500px;
+    background-color: black;
+
+    /* 꼬치 꼽기 */
+    display: flex; 
+
+    /* 꼬치 꼽는 방향 */
+    flex-direction:row;
+
+    /* 가로정렬 */
+    justify-content: space-between;
+
+    /* 세로정렬 */
+    align-items: center;
+
+    /* 넘칠 때 */
+    flex-wrap: wrap;
+}
+.item{
+    width:200px;
+    height: 100px;
+    background-color: white;
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

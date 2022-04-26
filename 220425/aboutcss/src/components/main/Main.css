@@ -36,6 +36,16 @@
     color:white;
     margin:5px 20px;
 }
+.mainContainer .word a{
+    text-decoration: underline;
+    color: white;
+    transition: all 0.3s;
+}
+.mainContainer .wordEmpty a{
+    text-decoration: none;
+    color: #282c34;
+    transition: all 0.3s;
+}
 .mainContainer .wordEmpty{
     margin: 5px 20px;
     color:#282c34;
