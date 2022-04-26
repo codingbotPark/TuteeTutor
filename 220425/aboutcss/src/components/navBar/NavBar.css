@@ -1,0 +1,23 @@
+.nav{
+    position: absolute;
+    top: 0px;
+    height:100px;
+    width:100%;
+    background-color: #20232a;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.navA{
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+    transition: all 0.3s;
+    /* font-weight: bold; */
+}
+.navA:hover{
+    color:#61dafb;
+}

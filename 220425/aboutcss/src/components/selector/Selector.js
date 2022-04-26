@@ -1,11 +1,11 @@
 import React from 'react';
 
-const main = () => {
+const selector = () => {
     return (
         <div>
-            CSS는...
+            
         </div>
     );
 };
 
-export default main;
+export default selector;

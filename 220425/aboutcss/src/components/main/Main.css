@@ -1,0 +1,42 @@
+.mainWrapper{
+    display :flex;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.mainImg{
+    height:300px;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.mainContainer > div{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.mainContainer h2{
+    font-size: 70px;
+    margin: 20px;
+    cursor: default;
+    transition: all 0.3s;
+}
+.mainContainer .letter:hover{
+    /* color:#61dafb; */
+}
+.mainContainer .border{
+    border: dashed 10px;
+    width:fit-content;
+    height: fit-content;
+}
+.mainContainer .word{
+    color:white;
+    margin:5px 20px;
+}
+.mainContainer .wordEmpty{
+    margin: 5px 20px;
+    color:#282c34;
+}
