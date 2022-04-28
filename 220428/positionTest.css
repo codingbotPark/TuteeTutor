@@ -10,6 +10,15 @@ body{
     color:#ececec;
 }
 
+.game{
+    text-decoration: underline;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0);
+}
+.game:hover{
+    background-color: rgba(0, 0, 0, 0);
+}
+
 a{
     color: #ececec;
     background-color: #2E2E2E;
