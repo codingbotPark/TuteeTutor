@@ -1,3 +1,5 @@
+// 배열에 대한 설명
+
 const arr = [
     "banana",
     "stroberry",
