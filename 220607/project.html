@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,17 +18,24 @@
 </head>
 <body>
     <h1>이거 눌러보쉴?</h1>
+    <img />
     <button onclick="countTime(10)">버튼입니다</button>
 
     <script>
         // js에서 버튼을 딱 지정해서,
         // 그 지정한거의 이벤트를 받는다
-
+        const h1 = document.querySelector("h1");
+        const 상관없어 = document.querySelector("img");
+        
         function countTime(time){
-            console.log("ㅎㅇ")
+            console.log(time)
             if(time > 0){
+                h1.innerHTML = time;
                 setTimeout(() => countTime(time -1),1000)
                 // setTimeout(function(){countTime(time -1)},1000)
+            } else {
+                h1.innerHTML = "";
+                상관없어.src = "./뻐큐.jfif";
             }
         } 
         // const 화살표함수 = () => {}
