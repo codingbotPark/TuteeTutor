@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>이거 눌러보쉴?</h1>
+    <button onclick="countTime(10)">버튼입니다</button>
+
+    <script>
+        // js에서 버튼을 딱 지정해서,
+        // 그 지정한거의 이벤트를 받는다
+
+        function countTime(time){
+            console.log("ㅎㅇ")
+            if(time > 0){
+                setTimeout(() => countTime(time -1),1000)
+                // setTimeout(function(){countTime(time -1)},1000)
+            }
+        } 
+        // const 화살표함수 = () => {}
+    </script>
+</body>
+</html>
