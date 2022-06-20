@@ -11,8 +11,25 @@
 // 객체 생성자
 // 도형이라는 객체에 모두 혜당되는 함수를 만들 때는 prototype
 // 생성자에서 prototype 지정 가능
-function 도형(x,y){
+// 영어면 대문자가 국룰이래요
 
+const 박병관 = {
+  키: 199,
+  몸무게: 100,
+  나는3대: 500,
+
+  영어이름: "Bruno",
+
+  바램: function () {
+    console.log(
+      `아 넵 저는 키${this.키}에 몸무게${this.몸무게}에 ${this.영어이름}입니다`
+    );
+  },
+};
+
+console.log(박병관.바램())
+
+function 도형(x,y){
     this.x = x
     this.y = y
     도형.prototype.sayXY = function(){
